@@ -4,3 +4,44 @@
 “Apesar de existirem valores considerados outliers segundo o critério IQR, estes representam medições quimicamente plausíveis e características reais do vinho (por exemplo, teores elevados de açúcar ou dióxido de enxofre).
 
 Assim, optou-se por não remover outliers, garantindo que a variabilidade natural do processo de produção é mantida e que os modelos aprendem a lidar com amostras extremas.”
+
+
+
+## Alpha nas redes neuronais
+
+
+### Cenário A: Alpha BAIXO (0.0001) - OVERFITTING
+    # Modelo com alpha baixo
+    nn = MLPClassifier(alpha=0.0001, ...)
+    nn.fit(X_train, y_train)
+    
+    # O que acontece:
+    # - Vê no treino: "Vinho com álcool=13.2 e sulphates=0.68 é qualidade 7"
+    # - Decora: "Se álcool=13.2 E sulphates=0.68 → sempre qualidade 7"
+    # - No teste: vê álcool=13.1 e sulphates=0.69 → ERRA!
+    # - Decorou os valores exatos, não aprendeu o padrão geral `
+
+
+### Cenário B: Alpha MUITO ALTO (0.5) - UNDERFITTING
+
+    # Modelo com alpha muito alto
+    nn = MLPClassifier(alpha=0.5, ...)
+    nn.fit(X_train, y_train)
+    
+    # O que acontece:
+    # - Pesos ficam TÃO pequenos que o modelo não consegue aprender padrões
+    # - É como estudar SÓ títulos sem ler o conteúdo
+
+
+
+### Notes:
+
+    -> hyperparameter tuning (by hand, etc...)
+
+    -> refined hyperparameters
+
+    -> alternativa a grid search, optuna
+
+    30 NN:
+    -> with the same hyperparameters, start a neural network with different weights, learning rate.
+    -> fazer a média, apresentar a desvia padrão.     
