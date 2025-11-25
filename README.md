@@ -45,3 +45,39 @@ Assim, optou-se por não remover outliers, garantindo que a variabilidade natura
     30 NN:
     -> with the same hyperparameters, start a neural network with different weights, learning rate.
     -> fazer a média, apresentar a desvia padrão.     
+
+
+## Melhores Configs NN
+
+    📊 TOP 5 MELHORES CONFIGURAÇÕES (por Test Accuracy):
+    ------------------------------------------------------------------------------------------
+
+    2º lugar:
+    Parâmetros: {'activation': 'tanh', 'alpha': 0.0001, 'hidden_layer_sizes': (128,), 'learning_rate': 'constant', 'learning_rate_init': 0.01, 'max_iter': 2500, 'solver': 'sgd'}
+    Test Acc:  0.7716 ± 0.0037
+    Train Acc: 0.8132 ± 0.0194
+    Gap:       0.0416 ± 0.0205
+
+    1º lugar:
+    Parâmetros: {'activation': 'tanh', 'alpha': 0.05, 'hidden_layer_sizes': (64,), 'learning_rate': 'adaptive', 'learning_rate_init': 0.01, 'max_iter': 2500, 'solver': 'sgd'}
+    Test Acc:  0.7716 ± 0.0060
+    Train Acc: 0.7998 ± 0.0146
+    Gap:       0.0282 ± 0.0102
+
+    3º lugar:
+    Parâmetros: {'activation': 'tanh', 'alpha': 0.01, 'hidden_layer_sizes': (128,), 'learning_rate': 'constant', 'learning_rate_init': 0.01, 'max_iter': 2500, 'solver': 'sgd'}
+    Test Acc:  0.7706 ± 0.0096
+    Train Acc: 0.8083 ± 0.0161
+    Gap:       0.0377 ± 0.0221
+
+    4º lugar:
+    Parâmetros: {'activation': 'tanh', 'alpha': 0.05, 'hidden_layer_sizes': (64,), 'learning_rate': 'constant', 'learning_rate_init': 0.01, 'max_iter': 2500, 'solver': 'sgd'}
+    Test Acc:  0.7706 ± 0.0096
+    Train Acc: 0.7936 ± 0.0171
+    Gap:       0.0230 ± 0.0097
+
+    5º lugar:
+    Parâmetros: {'activation': 'tanh', 'alpha': 0.05, 'hidden_layer_sizes': (128,), 'learning_rate': 'adaptive', 'learning_rate_init': 0.01, 'max_iter': 2500, 'solver': 'sgd'}
+    Test Acc:  0.7696 ± 0.0037
+    Train Acc: 0.7956 ± 0.0085
+    Gap:       0.0259 ± 0.0076
