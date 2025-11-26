@@ -81,3 +81,68 @@ Assim, optou-se por não remover outliers, garantindo que a variabilidade natura
     Test Acc:  0.7696 ± 0.0037
     Train Acc: 0.7956 ± 0.0085
     Gap:       0.0259 ± 0.0076
+
+## melhores configs RF
+
+    
+    1º lugar:
+       Parâmetros: {'bootstrap': True, 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 10, 'n_estimators': 300}
+       Test Acc:  0.7833 ± 0.0028
+       Train Acc: 0.9575 ± 0.0024
+       Gap:       0.1741
+    
+    2º lugar:
+       Parâmetros: {'bootstrap': True, 'max_depth': 10, 'min_samples_leaf': 1, 'min_samples_split': 10, 'n_estimators': 500}
+       Test Acc:  0.7824 ± 0.0024
+       Train Acc: 0.9392 ± 0.0016
+       Gap:       0.1568
+    
+    3º lugar:
+       Parâmetros: {'bootstrap': True, 'max_depth': 10, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+       Test Acc:  0.7824 ± 0.0064
+       Train Acc: 0.9889 ± 0.0009
+       Gap:       0.2065
+    
+    4º lugar:
+       Parâmetros: {'bootstrap': True, 'max_depth': 5, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 200}
+       Test Acc:  0.7824 ± 0.0064
+       Train Acc: 0.8217 ± 0.0009
+       Gap:       0.0394
+    
+    5º lugar:
+       Parâmetros: {'bootstrap': True, 'max_depth': 10, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 500}
+       Test Acc:  0.7824 ± 0.0064
+       Train Acc: 0.9905 ± 0.0019
+       Gap:       0.2082
+
+## melhores configs svm
+
+    1º lugar:
+       {'C': 5, 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf'}
+       Test Acc: 0.7647 ± 0.0000
+       Train Acc: 0.8273
+       Gap: 0.0626
+    
+    2º lugar:
+       {'C': 5, 'degree': 2, 'gamma': 'scale', 'kernel': 'rbf'}
+       Test Acc: 0.7647 ± 0.0000
+       Train Acc: 0.8273
+       Gap: 0.0626
+    
+    3º lugar:
+       {'C': 5, 'degree': 3, 'gamma': 'scale', 'kernel': 'rbf'}
+       Test Acc: 0.7647 ± 0.0000
+       Train Acc: 0.8273
+       Gap: 0.0626
+    
+    4º lugar:
+       {'C': 5, 'degree': 2, 'gamma': 'auto', 'kernel': 'rbf'}
+       Test Acc: 0.7647 ± 0.0000
+       Train Acc: 0.8273
+       Gap: 0.0626
+    
+    5º lugar:
+       {'C': 1, 'degree': 2, 'gamma': 'scale', 'kernel': 'rbf'}
+       Test Acc: 0.7618 ± 0.0000
+       Train Acc: 0.7910
+       Gap: 0.0292
