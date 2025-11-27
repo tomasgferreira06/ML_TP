@@ -70,6 +70,7 @@ Assim, optou-se por não remover outliers, garantindo que a variabilidade natura
     Train Acc: 0.8083 ± 0.0161
     Gap:       0.0377 ± 0.0221
 
+    ESCOLHIIDO
     4º lugar:
     Parâmetros: {'activation': 'tanh', 'alpha': 0.05, 'hidden_layer_sizes': (64,), 'learning_rate': 'constant', 'learning_rate_init': 0.01, 'max_iter': 2500, 'solver': 'sgd'}
     Test Acc:  0.7706 ± 0.0096
@@ -103,6 +104,7 @@ Assim, optou-se por não remover outliers, garantindo que a variabilidade natura
        Train Acc: 0.9889 ± 0.0009
        Gap:       0.2065
     
+    ESCOLHIDO
     4º lugar:
        Parâmetros: {'bootstrap': True, 'max_depth': 5, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 200}
        Test Acc:  0.7824 ± 0.0064
@@ -141,6 +143,7 @@ Assim, optou-se por não remover outliers, garantindo que a variabilidade natura
        Train Acc: 0.8273
        Gap: 0.0626
     
+    ESCOLHIDO
     5º lugar:
        {'C': 1, 'degree': 2, 'gamma': 'scale', 'kernel': 'rbf'}
        Test Acc: 0.7618 ± 0.0000
